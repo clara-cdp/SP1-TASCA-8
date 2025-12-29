@@ -1,5 +1,7 @@
 <?php
-require_once 'numberChecker.php';
+
+use PHPUnit\Framework\TestCase;
+use ex1_numberChecker\NumberChecker;
 
 class numberCheckerTest extends \PHPUnit\Framework\TestCase
 {

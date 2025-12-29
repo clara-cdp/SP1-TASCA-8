@@ -1,5 +1,11 @@
 {
+    "name": "clara/t8-n1-ex2",
+    "autoload": {
+        "psr-4": {
+            "ex2_carSpeedSensor\\": "src/"
+        }
+    },
     "require-dev": {
-        "phpunit/phpunit": "^11.5"
+        "phpunit/phpunit": "^10.5"
     }
 }

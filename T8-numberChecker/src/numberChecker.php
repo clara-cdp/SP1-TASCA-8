@@ -11,6 +11,7 @@ class NumberChecker
     {
         return $this->number % 2 == 0;
     }
+
     public function isPositive(): bool
     {
         return $this->number > 0;

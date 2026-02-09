@@ -7,6 +7,7 @@ IT ACADEMY - PHP - Tasca S1.08. Testing# SP1-TASCA-7
 ## NIVELL 1 --> completat
 
 exercici 1 : NUMBERCHECKER : Creació d'una classe de Testing utilitzant la llibreria de testing PHPUnit per a testejar l'arxiu numberChecker.php.
+*edit* refactoritzat numberCheckerTest per testejar les dues funcions isEven i isOdd com a propietats independents
 
 <img width="2137" height="393" alt="Captura de pantalla 2025-12-23 080203" src="https://github.com/user-attachments/assets/7b70c39d-8b02-4c76-a74f-f5c098e1d0e6" />
 
@@ -16,7 +17,9 @@ exercici 2 : CARSPEEDSENSOR Creació de test i classes amb phpUnit. Configuraci�
 
 ## NIVELL 2 --> completat
 
-- Creació de  DataProvider per els exercicis 1 i 2, nivell 1.
+- Creació de DataProvider per els exercicis 1 i 2, nivell 1.
+
+## NIVELL 3 --> 
 
 ### Tecnologies
 

@@ -2,8 +2,8 @@
     "name": "clara/sp1-tasca-8",
     "autoload": {
         "psr-4": {
-            "ex1_numberChecker\\": "T8-N1-ex1/src/",
-            "ex2_carSpeedSensor\\": "T8-N1-ex2/src/"
+            "ex1_numberChecker\\": "T8-numberChecker/src/",
+            "ex2_carSpeedSensor\\": "T8-carSpeedSensor/src/"
         }
     },
     "require-dev": {

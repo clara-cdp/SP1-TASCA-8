@@ -6,7 +6,7 @@ IT ACADEMY - PHP - Tasca S1.08. Testing# SP1-TASCA-7
 
 ## NIVELL 1 --> completat
 
-**exercici 1 : NUMBERCHECKER :** Creació d'una classe de Testing utilitzant la llibreria de testing PHPUnit per a testejar l'arxiu numberChecker.php.
+**exercici 1 -> NUMBERCHECKER :** Creació d'una classe de Testing utilitzant la llibreria de testing PHPUnit per a testejar l'arxiu numberChecker.php.
 *edit* refactoritzat numberCheckerTest per testejar les dues funcions isEven i isOdd com a propietats independents i afegit casos conflictius a mes de declarar strict_types: 
 
 - l'integre més gran
@@ -21,7 +21,7 @@ IT ACADEMY - PHP - Tasca S1.08. Testing# SP1-TASCA-7
 <img width="2137" height="393" alt="Captura de pantalla 2025-12-23 080203" src="https://github.com/user-attachments/assets/7b70c39d-8b02-4c76-a74f-f5c098e1d0e6" />
 
 
-exercici 2 : CARSPEEDSENSOR Creació de test i classes amb phpUnit. Configuració de fitxers i d'arxius json i .gitignore
+**exercici 2 -> CARSPEEDSENSOR :** Creació de test i classes amb phpUnit. Configuració de fitxers i d'arxius json i .gitignore
 
 *test nou:*
 <img width="2769" height="468" alt="test1_exercici2" src="https://github.com/user-attachments/assets/b8643082-d393-42e7-a450-da7c68f20d73" />
@@ -41,7 +41,11 @@ exercici 2 : CARSPEEDSENSOR Creació de test i classes amb phpUnit. Configuraci�
 
 
 
-## NIVELL 3 --> 
+## NIVELL 3 --> completat
+
+**exercici 1 -> LIBRARY :** Desenvolupar un petit software per a tractament d’informació en una biblioteca mitjançant TDD per tal de garantir que compleix totes les funcionalitats demanades per l’enunciat.
+
+
 
 ### Tecnologies
 

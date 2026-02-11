@@ -3,7 +3,8 @@
     "autoload": {
         "psr-4": {
             "ex1_numberChecker\\": "T8-numberChecker/src/",
-            "ex2_carSpeedSensor\\": "T8-carSpeedSensor/src/"
+            "ex2_carSpeedSensor\\": "T8-carSpeedSensor/src/",
+            "LibraryApp\\": "T8-LIBRARY/src/"
         }
     },
     "require-dev": {

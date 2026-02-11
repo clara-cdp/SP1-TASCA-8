@@ -10,11 +10,16 @@ class Book
         private string $author,
         private string $isbn,
         private string $genre,
-        private int $pages
+        private int $pageNum
     ) {}
 
     public function getTitle(): string
     {
         return $this->title;
+    }
+
+    public function getPages(): int
+    {
+        return $this->pageNum;
     }
 }

@@ -45,6 +45,11 @@ IT ACADEMY - PHP - Tasca S1.08. Testing# SP1-TASCA-7
 
 **exercici 1 -> LIBRARY :** Desenvolupar un petit software per a tractament d’informació en una biblioteca mitjançant TDD per tal de garantir que compleix totes les funcionalitats demanades per l’enunciat.
 
+- created BookTest.php and a Book to test if a book can be instantiated. TEST PASSED."  
+- library: assertCount: verifica que el resultat sigui un array i retorna el nombre de items esperat.
+- library: verificar que la llibreria és buida abans dínserir llibres
+
+
 
 
 ### Tecnologies

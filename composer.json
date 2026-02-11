@@ -7,6 +7,11 @@
             "LibraryApp\\": "T8-LIBRARY/src/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "LibraryApp\\Tests\\": "T8-LIBRARY/tests/"
+        }
+    },
     "require-dev": {
         "phpunit/phpunit": "^10.5"
     }

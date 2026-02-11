@@ -2,15 +2,14 @@
 
 declare(strict_types=1);
 
-namespace LibraryApp\Tests; // Changed to \Tests to be cleaner
+namespace LibraryApp\Tests;
 
 use PHPUnit\Framework\TestCase;
-use LibraryApp\Book; // This imports your class from src/Book.php
+use LibraryApp\Book;
 
 
 class BookTest extends TestCase
 {
-
         public function testBookCanBeInstatiated(): void
         {
 

@@ -14,31 +14,21 @@ IT ACADEMY - PHP - Tasca S1.08. Testing# SP1-TASCA-7
 - zero
 - decimals (enganyant el sistema)
 
-*test nou:*
-<img width="2338" height="514" alt="test_ex1" src="https://github.com/user-attachments/assets/c00320ea-c862-4c8e-be65-0f7d800da8bb" />
-
-*test anterior*
-<img width="2137" height="393" alt="Captura de pantalla 2025-12-23 080203" src="https://github.com/user-attachments/assets/7b70c39d-8b02-4c76-a74f-f5c098e1d0e6" />
-
-
 **exercici 2 -> CARSPEEDSENSOR :** Creació de test i classes amb phpUnit. Configuració de fitxers i d'arxius json i .gitignore
 
-*test nou:*
-<img width="2769" height="468" alt="test1_exercici2" src="https://github.com/user-attachments/assets/b8643082-d393-42e7-a450-da7c68f20d73" />
-
-*test anterior*
-<img width="2242" height="834" alt="Tasca8-nivell1" src="https://github.com/user-attachments/assets/65357ace-efa9-44f2-b875-c5a3f453727b" />
 
 ## NIVELL 2 --> completat
 
 - Creació de DataProvider per els exercicis 1 i 2, nivell 1.
 
 *test numberChecker : dataProvider
-<img width="2742" height="449" alt="test_ex1_provider" src="https://github.com/user-attachments/assets/44ba5417-bf19-4cc8-9753-300a7a79c414" />
 
-*test numberChecker : carSpeedChecker
-<img width="2715" height="443" alt="Test2_ex2_datarpovider" src="https://github.com/user-attachments/assets/85f35f3f-4a20-4483-894b-b04f0ef95b08" />
+<img width="2565" height="1152" alt="test-NUMBERCHECKER" src="https://github.com/user-attachments/assets/c264440d-a4ac-4024-8896-1213fcb29f34" />
 
+
+*test carSpeedChecker dataprovider
+
+<img width="2504" height="1181" alt="test-CarSpeedSensor" src="https://github.com/user-attachments/assets/30e91d9b-29fa-44ed-b3a7-8a29eb103c7d" />
 
 
 ## NIVELL 3 --> completat
@@ -62,7 +52,8 @@ __Consultes i Filtres__
 - Consulta per ISBN: Retorna l'objecte Book específic o null.
 - Filtre de Pàgines: Retorna exclusivament els llibres amb més de 500 pàgines.
 
-**__AFEGUIR SCREENSHOT__**
+<img width="2360" height="875" alt="library_all_tests" src="https://github.com/user-attachments/assets/7c2337db-0552-42b7-b5c5-4cc14a4986b2" />
+
 
 ### 🛠️ Tecnologies i Conceptes Aplicats
 

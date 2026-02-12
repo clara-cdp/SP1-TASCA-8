@@ -16,15 +16,23 @@ class Library
         return $this->books;
     }
 
-    public function getPages(): int
-    {
-        return $this->pages;
-    }
-
     public function getBooksOver500pages(): array
     {
-        return array_values(array_filter($this->books, function ($book) {
+        $booksList = array_values(array_filter($this->books, function ($book) {
             return $book->getPages() > 500;
         }));
+
+        return $booksList;
+    }
+
+    public function removeByISBN(string $isbn): void
+    {
+        foreach ($this->books as $key => $book) {
+            if ($book->getIsbn() === $isbn) {
+                unset($this->books[$key]);
+                $this->books = array_values($this->books);
+                break;
+            }
+        }
     }
 }

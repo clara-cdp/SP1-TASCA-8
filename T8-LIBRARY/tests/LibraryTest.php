@@ -22,7 +22,7 @@ class LibraryTest extends TestCase
         $this->library->addBook(new Book("La nit de l'escola", "Karl Ove Knausgård", "9780525562078", Genre::Paranormal, 501)); //book over 500 pgs
     }
 
-    //Afegeixin, esborrin (i modifiquin) un llibre de la llibreria.
+    //Afegeixin, esborrin un llibre de la llibreria.
     public function testAddBookToLibrary(): void
     {
         $newBook = new Book("1984", "George Orwell", "9780451524935", Genre::Dystopian, 328);
@@ -32,7 +32,7 @@ class LibraryTest extends TestCase
     }
 
     //-> NEW TEST. what happens i add a bokk that alreay exists?? 
-    public function testAddBookDuplicateBookException(): void
+    public function testAddDuplicateBookException(): void
     {
         $this->expectException(\Exception::class);
         $this->expectExceptionMessage("El llibre amb aquest ISBN ja existeix.");
@@ -50,7 +50,7 @@ class LibraryTest extends TestCase
         $this->assertCount(0, $library->getBooks());
     }
 
-    public function testRemoveBookByISBN(): void
+    public function testRemoveBookByIsbn(): void
     {
         $isbn = "9788408043645";
         $this->library->removeByISBN($isbn);
@@ -76,7 +76,7 @@ class LibraryTest extends TestCase
         $this->assertEquals("Dune", $results[0]->getTitle());
     }
 
-    public function testFindByISBN(): void
+    public function testFindByIsbn(): void
     {
         $ISBN = "9780261102217";
         $result = $this->library->findByISBN($ISBN);
@@ -94,9 +94,22 @@ class LibraryTest extends TestCase
         $this->assertEquals("The Hobbit", $results[0]->getTitle());
     }
 
+    //Permetin modificar... 
+
+    public function testModifyBookTitle(): void
+    {
+        $isbn = "978-0801950773";
+        $newTitle = "Dune: Deluxe Edition";
+
+        $this->library->editTitleByIsbn($isbn, $newTitle);
+
+        $book = $this->library->findByIsbn($isbn);
+        $this->assertEquals($newTitle, $book->getTitle());
+    }
+
 
     //Retornar llibres grans (més de 500 pàgines).
-    public function testFilterBooksOver500pages(): void
+    public function testFilterBooksOver500Pages(): void
     {
         $largeBooks = $this->library->getBooksOver500pages();
 

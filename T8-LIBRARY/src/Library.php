@@ -82,6 +82,16 @@ class Library
         return null;
     }
 
+    //modify book
+    public function editTitleByIsbn(string $isbn, string $newTitle): void
+    {
+        foreach ($this->books as $book) {
+            if ($book->getIsbn() === $isbn) {
+                $book->setTitle($newTitle);
+                return;
+            }
+        }
+    }
 
     //check book has pages over500
     public function getBooksOver500pages(): array

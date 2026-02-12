@@ -43,17 +43,31 @@ IT ACADEMY - PHP - Tasca S1.08. Testing# SP1-TASCA-7
 
 ## NIVELL 3 --> completat
 
-**exercici 1 -> LIBRARY :** Desenvolupar un petit software per a tractament d’informació en una biblioteca mitjançant TDD per tal de garantir que compleix totes les funcionalitats demanades per l’enunciat.
+**exercici 1 -> LIBRARY :** Desenvolupar un petit software per a tractament d’informació en una biblioteca mitjançant TDD per tal de garantir que compleix totes les funcionalitats demanades per l’enunciat. 
 
-- created BookTest.php and a Book to test if a book can be instantiated. TEST PASSED."  
-- library: assertCount: verifica que el resultat sigui un array i retorna el nombre de items esperat.
-- library: verificar que la llibreria és buida abans dínserir llibres
+**BookTest:**
+ Instanciació: Verifica que un llibre es pugi instanciar correctament (títol, autor, ISBN, Enum de gènere i número de pàgines).
 
+**LibraryTest:**
+__CRUD__
+- Afegir llibres: Comprova que la col·lecció creix correctament.
+- Validació de Duplicats: Test que assegura que es llança una excepció si s'intenta afegir un ISBN ja existent.
+- Esborrar llibres: Elimina un llibre cercant-lo pel seu ISBN únic.
+- Modificar llibres: Edita el títol d'un llibre existent mitjançant el seu ISBN.
 
+__Consultes i Filtres__
+- Consulta per Títol: Retorna un llistat de llibres que coincideixen amb el nom.
+- Consulta per Autor: Filtra tots els llibres d'un escriptor concret.
+- Consulta per Gènere: Filtra fent servir l'objecte Genre (Enum).
+- Consulta per ISBN: Retorna l'objecte Book específic o null.
+- Filtre de Pàgines: Retorna exclusivament els llibres amb més de 500 pàgines.
 
+**__AFEGUIR SCREENSHOT__**
 
-### Tecnologies
+### 🛠️ Tecnologies i Conceptes Aplicats
 
-- composer
-- PHP
-- PHPunit
+- PHP 8.2+
+- PHPUnit 11
+- Enums: per garantir que els gèneres dels llibres siguin estrictament els demanats per léxercici, evitant errors de dades.
+- Mètode setUp(): per inicialitzar una instància de Library amb 5 llibres abans de cada test.
+- Gestió d'Excepcions: El sistema protegeix la integritat de la biblioteca evitant la inserció d'ISBNs duplicats.

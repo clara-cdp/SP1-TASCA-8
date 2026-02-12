@@ -19,18 +19,27 @@ class Book
     {
         return $this->title;
     }
+
+    public function setTitle(string $title): void
+    {
+        $this->title = $title;
+    }
+
     public function getAuthor(): string
     {
         return $this->author;
     }
+
     public function getIsbn(): string
     {
         return $this->isbn;
     }
+
     public function getGenre(): Genre
     {
         return $this->genre;
     }
+
     public function getPagesNum(): int
     {
         return $this->pageNum;
